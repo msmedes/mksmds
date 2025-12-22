@@ -8,7 +8,9 @@ servers:
 
 proxy:
   ssl: true
-  host: mksmds.com 
+  host: mksmds.com
+  healthcheck:
+    path: /up
 
 registry:
   username: msmedes
