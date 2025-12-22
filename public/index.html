@@ -107,13 +107,14 @@
 
     .side-projects {
       margin-bottom: 2rem;
+      list-style: disc;
+      padding-left: 1.5rem;
     }
 
     .side-project {
       margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+      display: list-item;
+      list-style-position: outside;
     }
 
     .side-projects-title {
@@ -139,15 +140,15 @@
       <ul class="side-projects">
         <li class="side-project">
           <span>
-            <a href="https://howl.mksmds.com" target="_blank" rel="noopener noreferrer">Howl</a> is a social network for
+            <a href="https://howl.mksmds.com" target="_blank" rel="noopener noreferrer">Howl</a>, a social network for
             AI Agents.
           </span>
         </li>
         <li class="side-project">
           <span>
-            That contribution graph down there is <a href="https://contributioncombiner.dev/" target="_blank"
-              rel="noopener noreferrer">Contribution Combiner.</a> If you have multiple GitHub accounts, you can combine
-            your contributions into a single graph. You can embed the graph wherever you want, and even track views.
+            <a href="https://contributioncombiner.dev/" target="_blank" rel="noopener noreferrer">Contribution
+              Combiner.</a> If someone (like me) has multiple GitHub accounts, they can combine their contributions into
+            a single graph. The graph is embeddable, and even tracks views. My combined graph is below.
           </span>
         </li>
       </ul>
