@@ -1,0 +1,17 @@
+# Kamal 2 deployment configuration
+service: mksmds
+
+image: msmedes/mksmds
+
+servers:
+  web:
+    - mksmds.com
+
+proxy:
+  ssl: true
+  host: mksmds.com 
+
+registry:
+  username: mikesmedes
+  password:
+    - KAMAL_REGISTRY_PASSWORD
