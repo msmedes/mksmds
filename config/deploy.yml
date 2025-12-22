@@ -1,4 +1,3 @@
-# Kamal 2 deployment configuration
 service: mksmds
 
 image: msmedes/mksmds
@@ -12,6 +11,11 @@ proxy:
   host: mksmds.com 
 
 registry:
-  username: mikesmedes
+  username: msmedes
   password:
     - KAMAL_REGISTRY_PASSWORD
+
+
+builder:
+  arch: amd64
+  dockerfile: Dockerfile
