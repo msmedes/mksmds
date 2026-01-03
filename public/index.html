@@ -155,15 +155,19 @@
       <p>You can reach me at mikedsmedes at gmail dot com</p>
       <div data-contrib-graph="msmedes" data-source="personal_site" class="contribution-graph"></div>
       <script>
-        const validSources = ['personal_site', 'linkedin', 'github'];
+        const validSources = ['personal_site', 'linkedin', 'github', 'howl', 'tailscale'];
         const urlParams = new URLSearchParams(window.location.search);
         let source = urlParams.get('source') || 'personal_site';
         if (!validSources.includes(source)) {
           source = 'fuckery'
           alert(`Stop fucking with my analytics lol`);
         }
+        const wrapperDiv = document.querySelector('[data-contrib-graph="msmedes"]');
+        if (wrapperDiv) {
+          wrapperDiv.dataset.source = source;
+        }
         const script = document.createElement('script');
-        script.src = `https://contributioncombiner.dev/embed.js/?source=${encodeURIComponent(source)}`;
+        script.src = 'https://contributioncombiner.dev/embed.js';
         document.body.appendChild(script);
       </script>
     </main>
