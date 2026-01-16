@@ -130,8 +130,6 @@
       <nav>
         <a href="https://github.com/msmedes" target="_blank" rel="noopener noreferrer">github</a>
         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
-        <!-- <a href="https://contributioncombiner.dev/" target="_blank" rel="noopener noreferrer">contribution combiner</a> -->
-        <!-- <a href="https://howl.mksmds.com" target="_blank" rel="noopener noreferrer">howl</a> -->
       </nav>
     </aside>
     <main class="content">
@@ -166,6 +164,7 @@
         if (wrapperDiv) {
           wrapperDiv.dataset.source = source;
         }
+        console.log(`source: ${source}`);
         const script = document.createElement('script');
         script.src = 'https://contributioncombiner.dev/embed.js';
         document.body.appendChild(script);
